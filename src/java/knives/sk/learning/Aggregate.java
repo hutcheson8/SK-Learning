@@ -13,9 +13,9 @@ public class Aggregate {
 	private static final CSV C_S_V = CSV.getInstance();
 
 	public static void main(String[] args) throws IOException{
-		PrintStream output = Raw.fileOutputPrintStream("out.csv");
+		PrintStream output = Raw.fileOutputPrintStream("out/out.csv");
 		output.println(C_S_V.convertTableToString(
-				PYTHON.parseTable(Raw.fileContents("out.log").split("PREDICTIONS START" + System.lineSeparator())[1])));
+				PYTHON.parseTable(Raw.fileContents("out/out.log").split("PREDICTIONS START" + System.lineSeparator())[1])));
 		output.close();
 	}
 }

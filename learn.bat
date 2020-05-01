@@ -1,3 +1,3 @@
-java -jar compile.jar
-out.py>out.log
-java -jar aggregate.jar
+java -classpath bin knives.sk.learning.Compile
+out\out.py>out\out.log
+java -classpath bin knives.sk.learning.Aggregate
